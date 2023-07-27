@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--DOCTYPE - Declaración de un archivo tipo HTML-->
+<html lang="en">
+<!--htm encapsular todo nuestro código- lang (language)-->
+
+<head>
+    <!--HEAD (Metdata) información para el navegador-->
+    <meta charset="UTF-8">
+    <!--charset- conjunto de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres|La cereza del pastel</title>
+    <!--title- Nombre de sitio web en ventana-->
+    <link rel="icon" type="image/x-icon" href="images/postre.png">
+    <link rel="stylesheet" href="/style.css">
+    <!--link-para enlazar html+css y rel: relación del docu y href: ubicacion del documento-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--link para conectar nueva fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display:ital,wght@1,700&family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Playfair+Display:ital,wght@1,700;1,900&family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+
+
+
+<!--body- lo que ve el usuario-->
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="images/postre.png" width="5px" alt="Logo de la página web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#recetas">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#opiniones">Opiniones</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+    <!-- Encabezados 
+    <h1>¡Hola, mundo!</h1>
+    <h2>¡Hola, mundo!</h2>
+    <h3>¡Hola, mundo!</h3>
+    <h4>¡Hola, mundo!</h4>
+    <h5>¡Hola, mundo!</h5>
+    <h6>¡Hola, mundo!</h6> -->
+    <!--HR- Línea separadora-->
+    <!--<hr>-->
+
+    <h1 class="main-title">Recetario: La cereza del pastel</h1>
+        <!--INDICE CON ANCLAS-->
+        <!-- <div class="menu"> -->
+            <!--ancla -->
+            <!-- <a href="#asiaticos">Leones asiáticos</a> <br>
+            <a href="#africanos">Leones africanos</a>
+        </div> -->
+
+    <!--IMÁGENES A TRAVÉS DEL INTERNET-->
+    <!--<img src="https://i.pinimg.com/originals/e7/d0/13/e7d0139dd7c4ff3d21dfa88a074857d7.png" width="350px"
+        alt="Imagen de un león"> -->
+    
+    <div class=" d-flex flex-column justify-content-center align-items-center">
+    <!--IMAGENES A TRAVÉS DE TU COMPUTADORA-->
+    <img class="postres-principal rounded-circle" src="images/img1.avif" alt="">
+    </div>
+
+    <section id="recetas" class="recetas seccion-clara">
+        <h3 class="seccion-descripcion">Estas son algunas de mis recetas:</h3>
+    
+        <!--Receta 1-->
+        <div id="recetas-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <p class="title-receta">Gelatina de refresco</p>
+                  <img class="receta-imag rounded-circle" src="images/gelatina1.jpg" alt="Foto de gelatina1">
+                  <p class="receta-texto">Ingredientes:
+                    <ul>
+                        <li>1 1/2 tazas de refresco de limón</li>
+                        <li>1 1/2 sobres de gelatina sabor a limón (25 gr c/u)</li>
+                        <li>1 sobre de grenetina (7 g) hidratada en ¼ taza de agua y disuelta a baño María</li>
+                        <li>1 envase de media crema (500 ml)</li>
+                        <li>4 1/2 tazas refresco de limón</li>
+                        <li>2 limones cortados en rodajas</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <p class="title-receta">Gelatina de refresco</p>
+                <img class="receta-imag rounded-circle" src="images/gelatina1.jpg" alt="Foto de gelatina1">
+                  <p class="receta-texto">Procedimiento:
+                    <ol>
+                        <li>Calienta 1 ½ tazas de refresco de limón, agrega la gelatina de limón y mezcla hasta disolver por completo, vierte la grenetina previamente disuelta con la media crema y mueve hasta integrar, añade las 4 ½ tazas de refresco de limón restante; mezcla. </li>
+                        <li>Vierte en un molde para gelatina previamente engrasado y deja que cuaje a temperatura ambiente para que se formen las dos capas.</li>
+                        <li>Una vez que haya cuajado, refrigera hasta que esté firme, desmolda y decora con rodajas de limón.</li>
+                    </ol>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!--Receta 2-->
+        <div id="recetas-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <p class="title-receta">Pay de limón</p>
+                  <img class="receta-imag rounded-circle" src="images/pay.jpg" alt="Foto de pay">
+                  <p class="receta-texto">Ingredientes:
+                    <ul>
+                        <li>30 galletas marías molidas</li>
+                        <li>1 barra de mantequilla fundida (90 gr)</li>
+                        <li>1 lata de leche condensada</li>
+                        <li>1 lata de leche evaporada</li>
+                        <li>1/4 de taza de jugo de limón colado</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <p class="title-receta">Pay de limón</p>
+                <img class="receta-imag rounded-circle" src="images/pay.jpg" alt="Foto de pay de limón">
+                  <p class="receta-texto">Procedimiento:
+                    <ol>
+                        <li>Para la base, mezcla las galletas con la mantequilla hasta formar una pasta, coloca en un molde para pay, cubre la base y los bordes con la pasta de galleta y refrigera durante 10 minutos.</li>
+                        <li>Para el relleno, licúa la leche condensada con la leche evaporada y agrega poco a poco el jugo de limón.</li>
+                        <li>Vierte sobre la base de galleta y refrigera hasta que cuaje por completo; decora con ralladura de limón.</li>
+                    </ol>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recetas-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recetas-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+
+
+
+        <!--Receta 3-->
+        <div id="recetas-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <p class="title-receta">Mini hot-cakes</p>
+                  <img class="receta-imag rounded-circle" src="images/minihc.webp" alt="Foto de crepas">
+                  <p class="receta-texto">Ingredientes:
+                    <ul>
+                        <li>3/4 taza de leche evaporada</li>
+                        <li>1 huevo</li>
+                        <li>2 cucharadas de mantequilla fundida y 2 sin fundir</li>
+                        <li>1 cucharadita de esencia de vainilla</li>
+                        <li>1 taza de harina para hot cakes</li>
+                        <li>1 envase de leche condensada</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <p class="title-receta">Mini hot-cakes</p>
+                <img class="receta-imag rounded-circle" src="images/minihc.webp" alt="Foto de crepas">
+                  <p class="receta-texto">Procedimiento:
+                    <ol>
+                        <li>Mezcla la leche evaporada con el huevo, 2 cucharadas de mantequilla fundida, la esencia de vainilla y la harina para hot cakes. Vierte en una mamila de plástico y reserva.</li>
+                        <li>Calienta una sartén, agrega un poco de mantequilla y forma pequeños círculos con la mezcla anterior; cocina por ambos lados y repite hasta terminar con la preparación.</li>
+                        <li>En un tazón, sirve un poco de mini hot cakes con fruta de tu preferencia y leche condensada; mezcla y repite con el resto de los ingredientes.</li>
+                    </ol>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </section>
+
+
+        <section id="opiniones" class="opinion seccion-clara">
+            <h3>Opiniones</h3>
+            <div class="container text-center">
+              <div class="row">
+                <!-- opinion1 -->
+                <div class="columna col-12 col-md-4">
+                <img class="opinion-imagen rounded-circle" src="images/Miranda.JPG" alt="Foto de Miranda">    
+                  <p class="opinion-titulo">Miranda Jaramillo</p>
+                  <p class="opinion-text">Excelentes recetas </p>
+                  <div class="badges-contenedor">
+                    <span class="badge text-bg-success">Fácil</span>
+                    <span class="badge text-bg-success">Delicioso</span>
+                  </div>
+                </div>
+                <!-- Opinion2 -->
+                <div class="columna col-12 col-md-4">
+                    <img class="opinion-imagen rounded-circle" src="images/anonimo.jpg" alt="Foto de Miranda">    
+                      <p class="opinion-titulo">Anónimo</p>
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-success">Sencillo</span>
+                        <span class="badge text-bg-success">Barato</span>
+                      </div>
+                </div>
+                <!-- opinion3 -->
+                <div class="columna col-12 col-md-4">
+                    <img class="opinion-imagen rounded-circle" src="images/anonimo.jpg" alt="Foto de Miranda">    
+                      <p class="opinion-titulo">María Villalva</p>
+                      <p class="opinion-text">Buenísimo para el antojo</p>
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-success">Increíble</span>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+
+<!-- Contacto -->
+<section id="contacto" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame para conocer tu experiencia y compartir tus recetas.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:lacerezadelpastel@micorreo.com">
+              <button type="button">  
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pie de pagina (footer) -->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+    <img class="footer-logo" src="images/postre.png" alt="Logo del portafolio">
+    <p class="footer-texto text-center">Sígueme en mis redes sociales.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:janedoe@micorreo.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por La cereza del pastel (2022) &#169;</div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+/* 
+selector{
+    propiedad: valor;
+}
+*/
+
+body{
+    /*Color de fondo*/
+    background-color: rgb(252, 229, 249);
+    /*Cambio de tipografía*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.navbar {
+    padding: 2rem;
+    background-color: #faf7fa;
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+  .postres-principal {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+  }
+
+  .recetas {
+    padding: 40px 40px 80px 40px;
+  }
+  
+  .recetas .carousel {
+    max-width: 800px;
+  }
+  
+  .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-receta{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color:rgb(116, 43, 116);
+  }
+  
+  .receta-imag {
+    height: 250px;
+    width: 250px;
+    margin: 10px 10px 20px 10px;
+  }
+  
+  .receta-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+img{
+    /*cambiar tamaño de imágenes*/
+    width: 180px;
+}
+
+p{
+    /*Color del párrafo*/
+    color: rgb(133, 99, 235);
+}
+
+.main-title{
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #e934d1;
+}
+
+.seccion-descripcion{
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+}
+
+a{
+    color: purple;
+    text-decoration: none;
+}
+
+.opinion {
+    padding: 40px 40px 60px 40px;
+  }
+  
+  .opinion .columna {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+  }
+  
+  .opinion .columna:hover {
+    color: white;
+    background-color: #d79ef6;
+  }
+  
+  .opinion-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .opinion-text{
+    color: rgb(79, 72, 77);
+  }
+
+/* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgba(248, 132, 246, 0.566);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+  /* Pie de pagina (footer) */
+  
+  footer {
+    min-height: 500px;
+    background-color: rgb(227, 200, 205);
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+  
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .receta-imag {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .receta-texto {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+      max-width: 600px;
+    }
+  }
+  
